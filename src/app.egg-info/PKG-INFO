@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: app
+Version: 0.0.1
+Summary: A Python package for sentiment analysis on YouTube comments in Sinhala language.
+Home-page: https://github.com/HasinthakaPiyumal/youtube-sentiment-analysis-lk
+Author: HasinthakaPiyumal
+Author-email: hasinthakapiyumal@gmail.com
+Project-URL: Bug Tracker, https://github.com/HasinthakaPiyumal/youtube-sentiment-analysis-lk/issues
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
