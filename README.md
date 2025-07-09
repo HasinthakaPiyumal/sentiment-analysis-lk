@@ -1,18 +1,20 @@
-# YouTube Sentiment Analysis - Sinhala Language
+# YouTube Sentiment Analysis – Sinhala Language (Fine-Tuning Edition)
 
-A Python package for sentiment analysis on YouTube comments in Sinhala language. This project provides tools to analyze and classify the sentiment of Sinhala text comments from YouTube videos.
+This is a Python project for fine-tuning sentiment analysis models on YouTube comments written in Sinhala, Singlish, and English. It includes scripts and resources to train and adapt sentiment classification models using your own YouTube comment datasets.
+
+The goal is to build a robust multilingual sentiment classifier that works effectively in real-world Sri Lankan social media contexts.
 
 ## 🎯 Project Overview
 
-This project focuses on sentiment analysis specifically for Sinhala language text, addressing the unique challenges of processing and analyzing sentiment in this South Asian language. The system can classify YouTube comments into different sentiment categories.
+This project is focused on **finetuning** sentiment analysis models for Sinhala language YouTube comments. It enables users to preprocess data, train, and evaluate custom models, addressing the unique challenges of sentiment detection in Sinhala text.
 
 ## 🚀 Features
 
-- **Sinhala Text Processing**: Specialized text preprocessing for Sinhala language
-- **Emoji Handling**: Convert emojis to text for better sentiment analysis
-- **Comment Cleaning**: Remove mentions, URLs, and unnecessary characters
-- **Machine Learning Pipeline**: Complete workflow from data processing to model evaluation
-- **YouTube Comment Analysis**: Specifically designed for YouTube comment sentiment analysis
+- **Sinhala Text Preprocessing**: Tailored cleaning and normalization for Sinhala comments
+- **Emoji Handling**: Converts emojis to text to preserve sentiment cues
+- **Data Cleaning**: Removes mentions, URLs, and extraneous characters
+- **Finetuning Pipeline**: End-to-end workflow for adapting sentiment models
+- **YouTube Comment Support**: Designed for real-world YouTube comment data
 
 ## 📁 Project Structure
 
@@ -45,12 +47,14 @@ sentiment-analysis-lk/
 ### Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/HasinthakaPiyumal/youtube-sentiment-analysis-lk.git
    cd sentiment-analysis-lk
    ```
 
 2. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -62,11 +66,11 @@ sentiment-analysis-lk/
 
 ## 📊 Data
 
-The project includes three main datasets:
+The project expects your own datasets for finetuning:
 
-- `train.csv` - Training dataset with labeled Sinhala comments
-- `test.csv` - Test dataset for model evaluation
-- `youtube_comments.csv` - Raw YouTube comments for analysis
+- `train.csv` - Labeled Sinhala comments for training
+- `test.csv` - Labeled Sinhala comments for evaluation
+- `youtube_comments.csv` - Raw YouTube comments for preprocessing and annotation
 
 ## 🔧 Usage
 
@@ -81,41 +85,41 @@ cleaned = clean_comment(emoji_to_text(comment))
 print(cleaned)  # Output: "මේක හරිම ලස්සනයි smiling_face_with_heart_eyes"
 ```
 
-### Running Experiments
+### Finetuning Workflow
 
-The project includes Jupyter notebooks for the complete machine learning pipeline:
+Use the provided Jupyter notebooks to:
 
 1. **Data Processing** (`01_text_data_processing.ipynb`)
-   - Text cleaning and preprocessing
-   - Emoji conversion
-   - Data exploration
 
-2. **Model Training** (`02_training_model.ipynb`)
-   - Feature extraction
-   - Model training and selection
-   - Hyperparameter tuning
+   - Clean and preprocess your data
+   - Convert emojis
+   - Explore and annotate data
+
+2. **Model Finetuning** (`02_training_model.ipynb`)
+
+   - Extract features
+   - Finetune sentiment models on your dataset
+   - Tune hyperparameters
 
 3. **Evaluation** (`03_evaluation.ipynb`)
-   - Model performance evaluation
-   - Results visualization
-   - Error analysis
+   - Evaluate model performance
+   - Visualize results
+   - Analyze errors
 
 ## 🧪 Text Processing Features
 
 ### Emoji Conversion
-- Converts emojis to their text representations
-- Maintains sentiment context through emoji meanings
+
+- Converts emojis to text to retain sentiment information
 
 ### Comment Cleaning
-- Removes user mentions (@username)
-- Eliminates URLs and links
-- Filters out punctuation while preserving Sinhala characters
-- Removes numbers and extra whitespace
-- Handles Sinhala Unicode range (U+0D80-U+0DFF)
+
+- Removes user mentions, URLs, punctuation, numbers, and extra whitespace
+- Preserves Sinhala Unicode characters
 
 ## 📈 Model Performance
 
-*Note: Add your model performance metrics here after training*
+_Note: Add your finetuned model's performance metrics here after training._
 
 ## 🤝 Contributing
 
@@ -132,6 +136,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Hasinthaka Piyumal**
+
 - Email: hasinthakapiyumal@gmail.com
 - GitHub: [@HasinthakaPiyumal](https://github.com/HasinthakaPiyumal)
 
@@ -144,6 +149,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you have any questions or issues, please:
+
 1. Check the [Issues](https://github.com/HasinthakaPiyumal/youtube-sentiment-analysis-lk/issues) page
 2. Create a new issue if your problem isn't already addressed
 3. Contact the author directly via email
