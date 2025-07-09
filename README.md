@@ -103,7 +103,6 @@ Use the provided Jupyter notebooks to:
 
 3. **Evaluation** (`03_evaluation.ipynb`)
    - Evaluate model performance
-   - Visualize results
    - Analyze errors
 
 ## 🧪 Text Processing Features
@@ -150,18 +149,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or issues, please:
 
-1. Check the [Issues](https://github.com/HasinthakaPiyumal/youtube-sentiment-analysis-lk/issues) page
+1. Check the [Issues](https://github.com/HasinthakaPiyumal/sentiment-analysis-lk/issues) page
 2. Create a new issue if your problem isn't already addressed
 3. Contact the author directly via email
-
-## 🔮 Future Enhancements
-
-- [ ] Real-time sentiment analysis
-- [ ] Web interface for easy usage
-- [ ] Support for other South Asian languages
-- [ ] Integration with YouTube API
-- [ ] Mobile app development
-- [ ] Advanced deep learning models
 
 ---
 
